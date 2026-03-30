@@ -1,5 +1,9 @@
 # claude-adaptive-research
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](CHANGELOG.md)
+[![Works with Claude Code](https://img.shields.io/badge/works%20with-Claude%20Code-orange.svg)](https://docs.anthropic.com/en/docs/claude-code)
+
 **Autonomous, personalized research loops for Claude Code.**
 Set a topic. Walk away. Come back to a quality-gated report — adapted to your projects.
 
@@ -217,23 +221,6 @@ For perfected results, combine with these PrimeLine tools:
 
 ---
 
-## Part of the PrimeLine Ecosystem
-
-claude-adaptive-research works completely standalone. For deeper integration:
-
-| Tool | What it adds |
-|------|-------------|
-| **[Evolving Lite](https://github.com/primeline-ai/evolving-lite)** | Self-evolving session management — context routing, memory bootup, smart delegation |
-| **[Kairn](https://github.com/primeline-ai/kairn)** | Persistent knowledge engine — research findings survive across sessions |
-| **[Universal Planning Framework](https://github.com/primeline-ai/universal-planning-framework)** | Structured planning — turn research insights into actionable plans |
-| **[Claude tmux Orchestration](https://github.com/primeline-ai/claude-tmux-orchestration)** | Parallel workers — run multiple research loops simultaneously |
-| **[Quantum Lens](https://github.com/primeline-ai/quantum-lens)** | Multi-perspective analysis — 7 cognitive lenses for deeper insights |
-| **[PrimeLine Skills](https://github.com/primeline-ai/primeline-skills)** | Workflow skills — debugging, delegation, planning, code review |
-
-No dependencies between tools. Use any combination. All MIT licensed.
-
----
-
 ## Requirements
 
 - **Claude Code** >= 2.1.80
@@ -245,4 +232,25 @@ No dependencies between tools. Use any combination. All MIT licensed.
 
 ## License
 
-MIT — use it however you want.
+MIT — free to use, modify, and distribute.
+
+## Credits
+
+Built by [PrimeLine AI](https://primeline.cc). Extracted from a production AI orchestration system with 130+ sessions and 6 months of daily autonomous research.
+
+---
+
+## Part of the PrimeLine Ecosystem
+
+| Tool | What It Does | Deep Dive |
+|------|-------------|-----------|
+| [**Evolving Lite**](https://github.com/primeline-ai/evolving-lite) | Self-improving Claude Code plugin — memory, delegation, self-correction | [Blog](https://primeline.cc/blog/knowledge-architecture) |
+| [**Kairn**](https://github.com/primeline-ai/kairn) | Persistent knowledge graph with context routing for AI | [Blog](https://primeline.cc/blog/knowledge-architecture) |
+| [**tmux Orchestration**](https://github.com/primeline-ai/claude-tmux-orchestration) | Parallel Claude Code sessions with heartbeat monitoring | [Blog](https://primeline.cc/blog/tmux-orchestration) |
+| [**UPF**](https://github.com/primeline-ai/universal-planning-framework) | 3-stage planning with adversarial hardening | [Blog](https://primeline.cc/blog/planning-framework-dsv-reasoning) |
+| [**Quantum Lens**](https://github.com/primeline-ai/quantum-lens) | 7 cognitive lenses for multi-perspective analysis | [Blog](https://primeline.cc/blog/quantum-lens-multi-agent-analysis) |
+| [**Adaptive Research**](https://github.com/primeline-ai/claude-adaptive-research) | Autonomous personalized research loops with quality gate | Coming soon |
+| [**PrimeLine Skills**](https://github.com/primeline-ai/primeline-skills) | 5 production-grade workflow skills for Claude Code | [Blog](https://primeline.cc/blog/score-based-auto-delegation) |
+| [**Starter System**](https://github.com/primeline-ai/claude-code-starter-system) | Lightweight session memory and handoffs | [Blog](https://primeline.cc/blog/session-management) |
+
+**[@PrimeLineAI](https://x.com/PrimeLineAI)** · [primeline.cc](https://primeline.cc) · [Free Guide](https://primeline.cc/guide)
