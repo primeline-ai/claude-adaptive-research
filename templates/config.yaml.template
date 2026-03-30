@@ -1,0 +1,10 @@
+# Adaptive Research Configuration
+# Created by /auto-run --setup
+version: 1
+
+domains:
+  - name: example-domain
+    description: "Description of what this domain covers"
+  # Add more domains as needed
+
+created: YYYY-MM-DD

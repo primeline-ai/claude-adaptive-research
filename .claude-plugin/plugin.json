@@ -1,0 +1,24 @@
+{
+  "name": "claude-adaptive-research",
+  "version": "1.0.0",
+  "description": "Autonomous, personalized research loops for Claude Code. Set a topic, walk away, come back to a quality-gated report adapted to your projects.",
+  "author": {
+    "name": "PrimeLine AI",
+    "url": "https://github.com/primeline-ai"
+  },
+  "homepage": "https://github.com/primeline-ai/claude-adaptive-research",
+  "repository": "https://github.com/primeline-ai/claude-adaptive-research",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "autonomous-research",
+    "adaptive",
+    "research-loop",
+    "quality-gate",
+    "personalized",
+    "tmux",
+    "plugin"
+  ],
+  "commands": ["./commands"],
+  "skills": ["./skills"]
+}

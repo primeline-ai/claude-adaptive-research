@@ -1,0 +1,29 @@
+{
+  "description": "Autonomous research loop hooks — keeps the loop running until quality gate passes, handles rate limits gracefully",
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/ralph-loop-stop.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/stop-failure-handler.sh\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

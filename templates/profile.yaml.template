@@ -1,0 +1,17 @@
+# User Profile for Adaptive Research
+# Created by /auto-run --setup
+# Reports adapt findings to YOUR projects and goals.
+version: 1
+
+projects:
+  - name: "Project Name"
+    description: "What this project does"
+  # Add more projects as needed
+
+role: "Your role (developer, founder, researcher, designer...)"
+goals:
+  - "What you want to achieve"
+tools:
+  - "Tools and frameworks you use"
+
+created: YYYY-MM-DD
