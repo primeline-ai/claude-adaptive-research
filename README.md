@@ -9,6 +9,8 @@ Set a topic. Walk away. Come back to a quality-gated report — adapted to your 
 
 > One command. Autonomous research. Personalized insights.
 
+![Claude Adaptive Research](assets/hero.png)
+
 ---
 
 ## What it does
