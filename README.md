@@ -4,10 +4,11 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](CHANGELOG.md)
 [![Works with Claude Code](https://img.shields.io/badge/works%20with-Claude%20Code-orange.svg)](https://docs.anthropic.com/en/docs/claude-code)
 
-**Autonomous, personalized research loops for Claude Code.**
-Set a topic. Walk away. Come back to a quality-gated report — adapted to your projects.
+**Research that adapts to YOUR projects.** Autonomous loops that get smarter with every run.
 
-> One command. Autonomous research. Personalized insights.
+Set a topic. Walk away. Come back to a quality-gated report — with findings mapped directly to your projects, role, and goals.
+
+> One command. Personalized research. Compound learning.
 
 ![Claude Adaptive Research](assets/hero.png)
 
