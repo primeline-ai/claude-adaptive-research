@@ -59,6 +59,12 @@ Every report includes an **Adaptations** section that maps findings to YOUR proj
 ### Quality Gate
 Reports are scored on 4 criteria (structure, depth, originality, findings count). Score below 50? Claude automatically improves the report before completing. No half-baked outputs.
 
+### Compound Learning
+Each run makes the next one smarter. Keywords, patterns, and follow-up questions discovered during research are saved and injected into future runs. Run 1 finds keywords → Run 2 searches deeper → Run 3 connects cross-domain. This is what makes it *adaptive*, not just *autonomous*.
+
+### Compound Score
+Track your research progress: total runs, findings discovered, streak days. Research becomes a habit with visible momentum.
+
 ### Research Domains
 Organize your research into knowledge areas. Pick from examples or create your own:
 
@@ -79,6 +85,8 @@ Pre-configured research strategies for common needs:
 | `technique-scout` | New techniques and tools in your field | Staying current |
 | `cross-domain` | Patterns transferred between disciplines | Innovation, breakthroughs |
 | `trend-radar` | Emerging trends in any niche | Spotting opportunities early |
+| `content-pipeline` | Research + draft a blog post or article | Content creation |
+| `competitor-analysis` | Reverse-engineer top performers | Competitive intelligence |
 
 ### Rate Limit Resilience
 Three-layer protection keeps your research running:
@@ -141,7 +149,7 @@ Run multiple research topics overnight:
 [Setup check] ─── no config? ──→ guided setup (domains + profile)
      |
      v
-[Build prompt] ─── load profile, inject adaptations template
+[Build prompt] ─── load profile + feedback context from previous runs
      |
      v
 [Create loop state] ─── _autonomous/loop.state.md
@@ -158,6 +166,14 @@ Run multiple research topics overnight:
      |                                      |
      v                                      |
 [Quality Gate] ── score >= 50? ── no ──────→┘
+     |
+     yes
+     |
+     v
+[Save feedback] ── keywords + topics for next run
+     |
+     v
+[Kairn?] ── if installed: save top findings to memory
      |
      yes
      |
@@ -209,16 +225,29 @@ The plugin shows a cost reminder on first use each session.
 
 ---
 
-## Pro Tip: Deeper Analysis
+## Pro Tip: Deeper Analysis & Persistent Memory
 
-For perfected results, combine with these PrimeLine tools:
+### Quantum Lens — Perfect your findings
 
-- **[Quantum Lens](https://github.com/primeline-ai/quantum-lens)** — Run 7 cognitive lenses on your findings for multi-perspective analysis that catches what single-perspective research misses
-- **Quantum Lens Solution Engine** — Turn research insights into engineered solutions with feasibility scoring
+For perfected results, run [Quantum Lens](https://github.com/primeline-ai/quantum-lens) on your reports. 7 cognitive lenses analyze findings from fundamentally different perspectives — catching blind spots that single-perspective research always misses. The Solution Engine then turns insights into engineered solutions with feasibility scoring.
 
 ```
 # After auto-run completes, deepen the best findings:
 /quantum-lens "analyze _autonomous/results/biology/2026-03-30.md"
+```
+
+### Kairn — Remember across sessions
+
+Install [Kairn](https://github.com/primeline-ai/kairn) for persistent knowledge across sessions. When Kairn is detected as an MCP server, the plugin automatically:
+
+- **Saves** top findings from each run to your knowledge graph
+- **Recalls** relevant past findings when starting a new run
+- **Prevents** re-discovering what you already know
+
+Without Kairn: reports live as markdown files. With Kairn: findings become searchable memory that survives across sessions and projects.
+
+```bash
+pip install kairn-ai  # That's it — the plugin detects it automatically
 ```
 
 ---
