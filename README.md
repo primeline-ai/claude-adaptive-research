@@ -268,7 +268,7 @@ MIT — free to use, modify, and distribute.
 
 ## Credits
 
-Built by [PrimeLine AI](https://primeline.cc). Extracted from a production AI orchestration system with 130+ sessions and 6 months of daily autonomous research.
+Built by [PrimeLine AI](https://primeline.cc). Extracted from a production AI orchestration system with months of daily autonomous research.
 
 ---
 
