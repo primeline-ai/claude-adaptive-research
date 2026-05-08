@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/primeline-ai/claude-adaptive-research/schemas/cross_track_finding",
+  "title": "Cross-Track Finding",
+  "description": "A single research finding produced by one multi-track research run. Files live at {cache_root}/cross-track-{run_id}/track-{track_id}.json (array of these objects per track). Used by scripts/cross_track_aggregator.py to detect convergence across tracks.",
+  "type": "object",
+  "required": [
+    "run_id", "track_id", "finding_id", "finding_type",
+    "content", "citations", "layer", "components",
+    "impact_tag", "confidence", "timestamp"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "description": "Unique identifier for the run, e.g. 'multi-track-2026-05-08' or 'swarm-intel-deep-2026-06-01'.",
+      "minLength": 1,
+      "pattern": "^[a-z0-9][a-z0-9\\-]*[a-z0-9]$"
+    },
+    "track_id": {
+      "type": "string",
+      "description": "Single uppercase letter identifying the track within this run.",
+      "pattern": "^[A-Z]$"
+    },
+    "finding_id": {
+      "type": "string",
+      "description": "8-character lowercase hex hash. Generate with hashlib.sha256(content).hexdigest()[:8]",
+      "pattern": "^[a-f0-9]{8}$"
+    },
+    "finding_type": {
+      "type": "string",
+      "description": "Finding category. One of decision, pattern, gotcha, solution.",
+      "enum": ["decision", "pattern", "gotcha", "solution"]
+    },
+    "content": {
+      "type": "string",
+      "description": "Full text. Used for keyword-overlap convergence detection.",
+      "minLength": 10
+    },
+    "citations": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "default": []
+    },
+    "layer": {
+      "type": "string",
+      "description": "System layer per architecture.md Integration Matrix.",
+      "minLength": 1
+    },
+    "components": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1},
+      "default": []
+    },
+    "impact_tag": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z][a-z0-9\\-]*[a-z0-9]$"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(Z|[+-]\\d{2}:\\d{2})$"
+    }
+  }
+}
