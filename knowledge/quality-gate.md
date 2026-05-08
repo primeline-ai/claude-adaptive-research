@@ -2,6 +2,12 @@
 
 Every research report is scored before the loop completes. Score >= 50 required for `<promise>DONE</promise>`.
 
+> **Premium rubric available**: For stricter premium-by-default scoring, use the
+> Python rubric at [`knowledge/quality-gate-v2.md`](quality-gate-v2.md) backed by
+> [`scripts/quality_gate_v2.py`](../scripts/quality_gate_v2.py). v1 (this doc) and
+> v2 are independent gates; v2 raises the bar with citation density, DSV evidence,
+> gap disclosure, ECP section, and cross-track convergence checks.
+
 ## Prerequisites (all must pass)
 
 | Check | Requirement |

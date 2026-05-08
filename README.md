@@ -60,6 +60,8 @@ Every report includes an **Adaptations** section that maps findings to YOUR proj
 ### Quality Gate
 Reports are scored on 4 criteria (structure, depth, originality, findings count). Score below 50? Claude automatically improves the report before completing. No half-baked outputs.
 
+**Premium rubric (v2, optional)**: For stricter premium-by-default scoring, run `python3 scripts/quality_gate_v2.py path/to/report.md`. v2 checks 5 metrics (citation density, DSV evidence, gap disclosure, ECP section, cross-track convergence) and assigns a tier: Premium (5/5), Standard (3-4/5), Reject (<3/5). See [knowledge/quality-gate-v2.md](knowledge/quality-gate-v2.md). Requires Python 3.9+.
+
 ### Compound Learning
 Each run makes the next one smarter. Keywords, patterns, and follow-up questions discovered during research are saved and injected into future runs. Run 1 finds keywords → Run 2 searches deeper → Run 3 connects cross-domain. This is what makes it *adaptive*, not just *autonomous*.
 
